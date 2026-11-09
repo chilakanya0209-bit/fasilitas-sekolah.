@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Unggulan - SMK Kriya Sahid Sukoharjo</title>
+    <style>
+        :root {
+            --primary-color: #8B0000; /* Warna khas Sahid / Merah Marun */
+            --secondary-color: #D4AF37; /* Aksen Emas */
+            --dark-color: #333333;
+            --light-color: #F9F9F9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--secondary-color);
+            bottom: 0;
+            left: 25%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SMK Kriya Sahid</h1>
+        <p>Pusat Unggulan Pendidikan Kreatif, Seni, dan Teknologi Berkualitas</p>
+    </header>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Fasilitas Sekolah</h2>
+        </div>
+
+        <div class="grid">
+            <!-- Fasilitas 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Studio Kriya & Desain">
+                <div class="card-content">
+                    <h3>Studio Kriya & Desain</h3>
+                    <p>Ruang praktik kreatif yang dirancang khusus untuk mendukung eksplorasi seni kriya tekstil, kayu, dan logam dengan peralatan lengkap.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Lab Komputer & Multimedia">
+                <div class="card-content">
+                    <h3>Lab Komputer & Multimedia</h3>
+                    <p>Laboratorium modern dengan spesifikasi perangkat tinggi untuk mendukung siswa mendesain grafis, animasi, dan pemanfaatan teknologi digital.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80" alt="Perpustakaan Digital">
+                <div class="card-content">
+                    <h3>Perpustakaan Digital</h3>
+                    <p>Pusat literasi sekolah yang menyediakan koleksi buku cetak referensi seni/kunjungan industri serta akses e-book lengkap bagi siswa.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 4 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80" alt="Ruang Teori & Kelas Nyaman">
+                <div class="card-content">
+                    <h3>Ruang Teori & Kelas Nyaman</h3>
+                    <p>Ruang kelas ber-AC yang dilengkapi fasilitas proyektor dan media pembelajaran interaktif demi menciptakan suasana belajar kondusif.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" alt="Unit Kesehatan Sekolah (UKS)">
+                <div class="card-content">
+                    <h3>Unit Kesehatan Sekolah (UKS)</h3>
+                    <p>Fasilitas kesehatan tanggap darurat yang siap melayani penanganan awal kesehatan fisik siswa selama berada di lingkungan sekolah.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 6 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Area Ibadah / Masjid">
+                <div class="card-content">
+                    <h3>Area Ibadah / Masjid Sekolah</h3>
+                    <p>Sarana tempat ibadah yang bersih dan luas untuk mendukung pembentukan karakter kerohanian siswa secara rutin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SMK Kriya Sahid. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
